@@ -15,7 +15,7 @@
   width:200px;
   grid-column: 1/2;
   @media #{$large}{
-    width:250px;
+    width:200px;
   }
   @media #{$mobile} {
     width:120px;
@@ -32,11 +32,17 @@
 }
 
 #soc {
+  height:50px;
+  width:100px;
+  position:fixed;
+  top: 0;
+  right: 0;
   display:flex;
   justify-content: flex-end;
   margin-right:20px;
 
-  div#translate {
+  div {
+    height: 100%;
     display:flex;
   }
 

@@ -77,7 +77,7 @@
   grid-column: 1/2; }
   @media screen and (min-width: 1824px) {
     .logo {
-      width: 250px; } }
+      width: 200px; } }
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .logo {
       width: 120px; } }
@@ -88,10 +88,16 @@
       margin: auto; }
 
 #soc {
+  height: 50px;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: flex-end;
   margin-right: 20px; }
-  #soc div#translate {
+  #soc div {
+    height: 100%;
     display: flex; }
   #soc a {
     margin: auto;
