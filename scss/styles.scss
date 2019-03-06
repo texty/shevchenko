@@ -69,8 +69,6 @@ body {
   height:100%;
   margin:100px auto;
 
-  //grid-column:1/-1;
-
   img {
     max-width:1200px;
     align-self: center;
@@ -89,7 +87,6 @@ body {
   background-color: rgba(225, 225, 225, 0.5);
   cursor:pointer;
   text-align: center;
-  //margin: 8% 0;
   @media(max-width:800px){
     display:none;
   }
