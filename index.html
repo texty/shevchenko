@@ -72,15 +72,23 @@
     <img id="cover-picture" src="img/she_cover.jpg"/>
 </div>
 
-<section id="mainContent">
-
-
+<div class="mainContent">
         <h3>На графіці показані роки написання – і першої публікації поезій Тараса Шевченка. Остання публікація твору, що доти не виходив, була здійснена у 1927 році.
         </h3>
 
-        <h5><b>Збір даних та графіка:</b> Костянтин&nbsp;Левін, <br><b>текст:</b> Тетяна&nbsp;Трофименко
+        <h5><b>Збір даних та графіка:</b> Костянтин&nbsp;Левін, <b>текст:</b> Тетяна&nbsp;Трофименко
         </h5>
 
+</div>
+
+        <div id="graphics">
+            <img  src="img/shevchenko-publishing-dates.png"/>
+        </div>
+
+
+
+
+<div class="mainContent">
         <div id="text">
             <p>Сьогодні, коли Тарас Шевченко очолює канон української класики, а його творчість репрезентує нашу літературу в світі, ми мало замислюємося над тим, коли й за яких обставин виходили друком тексти, що складають усім відомий «Кобзар». Тим часом, більшість віршів і поем була видана вже після смерті автора, чиї взаємини з Російською імперією можна назвати складними, навіть трагічними.
             </p>
@@ -102,11 +110,9 @@
         </div>
 
 
-</section>
-
-<div id="graphics">
-<img  src="img/shevchenko-publishing-dates.png"/>
 </div>
+
+
 
 <!-- Donate button -->
 <div id="button">
@@ -195,7 +201,7 @@
 
 
         window.addEventListener("resize", function(){
-            var newCoverHeight = document.getElementById("cover").getBoundingClientRect().height;
+            var newCoverHeight = document.getElementById("cover-picture").getBoundingClientRect().height;
             document.getElementById("arrow-down").style.top = newCoverHeight - (window.innerWidth/10) + "px";
         });
 
