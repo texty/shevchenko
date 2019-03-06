@@ -314,10 +314,6 @@ body {
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
       #mainContent #text {
         margin-top: 100px; } }
-  #mainContent img {
-    margin-top: 100px;
-    width: 100%;
-    grid-column: 2/3; }
   #mainContent h3 {
     width: 50%;
     grid-column: 1/2;
@@ -341,6 +337,16 @@ body {
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
       #mainContent h5 {
         margin-left: 0; } }
+
+#graphics {
+  display: flex;
+  height: 100%;
+  margin: 100px auto 0 auto; }
+  #graphics img {
+    max-width: 1200px;
+    align-self: center;
+    margin: auto;
+    width: 100%; }
 
 /*---------- button -------*/
 #arrow-down {
