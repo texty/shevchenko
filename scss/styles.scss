@@ -22,6 +22,7 @@ body {
     display:block;
   }
   @media #{$mobile} {
+    width:100%;
     display:block;
   }
 
