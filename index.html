@@ -207,9 +207,15 @@
         $("#arrow-down").append('<img id="arrow-down-pic" title="скрольте вниз" style="width:5vw;" src="img/arrow-down2.png"/>');
 
 
-        window.addEventListener("resize", function(){
-            var newCoverHeight = document.getElementById("cover-picture").getBoundingClientRect().height;
-            document.getElementById("arrow-down").style.top = newCoverHeight - (window.innerWidth/10) + "px";
+        $(window).on("resize", function(){
+            var newCoverHeight = $("#cover-picture")[0].getBoundingClientRect().height;
+            $("#arrow-down").css("top", function(d) {
+                if (newCoverHeight >= window.innerHeight) {
+                    return window.innerHeight - 100 + "px";
+                } else {
+                    return newCoverHeight - window.innerWidth / 10 + "px";
+                }
+            })
         });
 
     },300);
