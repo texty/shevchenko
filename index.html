@@ -195,8 +195,15 @@
 <script src="lib/share-behavior.js"></script>
 <script>
     setTimeout(function(){
-        var coverHeight = document.getElementById("cover-picture").getBoundingClientRect().height;
-        document.getElementById("arrow-down").style.top = coverHeight - (window.innerWidth / 10) + "px";
+        var coverHeight = $("#cover-picture")[0].getBoundingClientRect().height;
+                    $("#arrow-down").css("top", function(d) {
+                        if (coverHeight >= window.innerHeight) {
+                            return window.innerHeight - 100 + "px";
+                        } else {
+                            return coverHeight - window.innerWidth / 10 + "px";
+                        }
+                    })
+
         $("#arrow-down").append('<img id="arrow-down-pic" title="скрольте вниз" style="width:5vw;" src="img/arrow-down2.png"/>');
 
 

@@ -343,10 +343,10 @@ body {
 
 /*---------- button -------*/
 #arrow-down {
-  background-color: rgba(225, 225, 225, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   text-align: center; }
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     #arrow-down {
       display: none; } }
 
